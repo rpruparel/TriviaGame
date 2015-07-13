@@ -17,8 +17,7 @@ public class ResultActivity extends Activity {
     Button b;
     ProgressBar pb;
 
-    @
-    Override
+    @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
@@ -40,8 +39,7 @@ public class ResultActivity extends Activity {
         b = (Button) findViewById(R.id.button1);
         b.setOnClickListener(new View.OnClickListener() {
 
-            @
-            Override
+            @Override
             public void onClick(View v) {
 
                 finish();
@@ -51,8 +49,7 @@ public class ResultActivity extends Activity {
 
         b.setOnClickListener(new View.OnClickListener() {
 
-            @
-            Override
+            @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),
                     TriviaActivity.class);
@@ -63,16 +60,14 @@ public class ResultActivity extends Activity {
 
     }
 
-    @
-    Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.result, menu);
         return true;
     }
 
-    @
-    Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
@@ -82,8 +77,7 @@ public class ResultActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    @
-    Override
+    @Override
     public void onBackPressed() {
         // TODO Auto-generated method stub
         super.onBackPressed();

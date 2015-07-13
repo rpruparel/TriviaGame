@@ -17,8 +17,7 @@ public class CountActivity extends Activity implements OnClickListener {
     private final long startTime = 24 * 1000;
     private final long interval = 1 * 1000;
 
-    @
-    Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -27,8 +26,7 @@ public class CountActivity extends Activity implements OnClickListener {
         text.setText(text.getText() + String.valueOf(startTime / 1000));
     }
 
-    @
-    Override
+    @Override
     public void onClick(View v) {
         if (!timerHasStarted) {
             countDownTimer.start();
@@ -46,14 +44,12 @@ public class CountActivity extends Activity implements OnClickListener {
             super(startTime, interval);
         }
 
-        @
-        Override
+        @Override
         public void onFinish() {
             text.setText("Time's up!");
         }
 
-        @
-        Override
+        @Override
         public void onTick(long millisUntilFinished) {
             text.setText("" + millisUntilFinished / 1000);
         }

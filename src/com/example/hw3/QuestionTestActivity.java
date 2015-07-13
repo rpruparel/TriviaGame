@@ -9,8 +9,7 @@ import android.view.MenuItem;
 
 public class QuestionTestActivity extends Activity {
 
-    @
-    Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_test);
